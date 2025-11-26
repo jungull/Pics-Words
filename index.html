@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pictures & Words - Home</title>
+    <meta name="description"
+        content="Welcome to Pictures & Words - a photography and writing portfolio showcasing visual artistry and literary reflections.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&family=Open+Sans:wght@300;400;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Pictures & Words</h1>
+        <button class="hamburger" onclick="toggleMenu()">☰</button>
+        <nav>
+            <ul id="navLinks" class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li class="dropdown">
+                    <a href="pictures.html" class="dropbtn">Pictures ▾</a>
+                    <ul class="dropdown-content">
+                        <li><a href="textures.html">Textures</a></li>
+                        <li><a href="motion.html">Motion</a></li>
+                        <li><a href="negative-space.html">Negative Space</a></li>
+                        <li><a href="composition.html">Composition</a></li>
+                        <li><a href="bugs.html">Bugs</a></li>
+                        <li><a href="flowers.html">Flowers</a></li>
+                    </ul>
+                </li>
+                <li><a href="words.html">Words</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="citations.html">Citations</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="split-container">
+            <section class="split-section">
+                <h2>Pictures</h2>
+                <div class="shuffle-box" onclick="shuffleImage()">
+                    <p class="caption">Click to Shuffle Image</p>
+                    <img id="shuffleImageDisplay" src="" alt="" style="display: none;">
+                </div>
+                <p><a href="pictures.html">View All Galleries →</a></p>
+            </section>
+
+            <section class="split-section">
+                <h2>Words</h2>
+                <div class="shuffle-box" onclick="shuffleQuote()">
+                    <p class="caption">Click to Shuffle Quote</p>
+                    <p id="shuffleQuoteDisplay">Click above to see a random quote</p>
+                </div>
+                <p><a href="words.html">Read Book Reviews →</a></p>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="citations.html">Citations</a></li>
+            </ul>
+        </nav>
+        <div class="footer-social">
+            <a href="https://www.goodreads.com/user/show/109060411-john-gallagher" target="_blank">Goodreads</a> |
+            <a href="https://www.instagram.com/jhngllghr/" target="_blank">Instagram</a> |
+            <a href="https://vsco.co/juunggle/gallery" target="_blank">VSCO</a> |
+            <a href="mailto:contact@picturesandwords.com">Email</a>
+        </div>
+        <p>&copy; 2025 Pictures & Words. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

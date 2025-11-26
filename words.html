@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Words - Book Reviews & Writing</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&family=Open+Sans:wght@300;400;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Pictures & Words</h1>
+        <button class="hamburger" onclick="toggleMenu()">☰</button>
+        <nav>
+            <ul id="navLinks" class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="pictures.html" class="dropbtn">Pictures ▾</a>
+                    <ul class="dropdown-content">
+                        <li><a href="textures.html">Textures</a></li>
+                        <li><a href="motion.html">Motion</a></li>
+                        <li><a href="negative-space.html">Negative Space</a></li>
+                        <li><a href="composition.html">Composition</a></li>
+                        <li><a href="bugs.html">Bugs</a></li>
+                        <li><a href="flowers.html">Flowers</a></li>
+                    </ul>
+                </li>
+                <li><a href="words.html" class="active">Words</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="citations.html">Citations</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- sidebar navigation to pictures -->
+    <div class="sidebar sidebar-left">
+        <a href="index.html">Pictures</a>
+    </div>
+
+    <main>
+        <div class="container">
+            <h1 class="text-center">Words</h1>
+            <p class="text-center">Book reviews, literary analysis, and reflections on the power of storytelling.</p>
+
+            <!-- book 1: the brothers karamazov -->
+            <article class="book-review clearfix">
+                <div class="book-cover float-left">
+                    <img src="assets/images/BookCovers/Brothers K.jpg" alt="The Brothers Karamazov book cover">
+                </div>
+                <div class="book-text">
+                    <h2>The Brothers Karamazov by Fyodor Dostoevsky</h2>
+                    <div class="quote-container">
+                        <span id="quote-brothers-k" class="book-quote">"Above all, don't lie to yourself. The man who
+                            lies to himself and listens to his own lie comes to a point that he cannot distinguish the
+                            truth within him, or around him, and so loses all respect for himself and for others." -
+                            Fyodor Dostoevsky</span>
+                        <button class="quote-btn" onclick="shuffleBookQuote('brothers-k')">New Quote</button>
+                    </div>
+                    <p>A passionate philosophical novel that enters deeply into the ethical debates of God, free will,
+                        and morality. It is a spiritual drama of moral struggles concerning faith, doubt, judgment, and
+                        reason, set against a modernizing Russia, with a plot which revolves around the subject of
+                        patricide.</p>
+                </div>
+            </article>
+
+            <!-- book 2: east of eden -->
+            <article class="book-review clearfix">
+                <div class="book-cover float-right">
+                    <img src="assets/images/BookCovers/East of Eden.jpg" alt="East of Eden book cover">
+                </div>
+                <div class="book-text">
+                    <h2>East of Eden by John Steinbeck</h2>
+                    <div class="quote-container">
+                        <span id="quote-east-of-eden" class="book-quote">"And now that you don't have to be perfect, you
+                            can be good." - John Steinbeck</span>
+                        <button class="quote-btn" onclick="shuffleBookQuote('east-of-eden')">New Quote</button>
+                    </div>
+                    <p>Generational Family story that intertwines themes of Genesis into a large cast of characters in
+                        early 1900s America. It explores the complex nature of love, the pain of rejection, and the
+                        possibility of redemption through the power of choice.</p>
+
+                    <section>
+                        <h3>Listen: East of Eden Audio Excerpt</h3>
+                        <audio controls>
+                            <source src="assets/audio/East of Eden Excerpt.m4a" type="audio/mp4">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </section>
+                </div>
+            </article>
+
+            <!-- book 3: frankenstein -->
+            <article class="book-review clearfix">
+                <div class="book-cover float-left">
+                    <img src="assets/images/BookCovers/Frankenstein.jpg" alt="Frankenstein book cover">
+                </div>
+                <div class="book-text">
+                    <h2>Frankenstein by Mary Shelley</h2>
+                    <div class="quote-container">
+                        <span id="quote-frankenstein" class="book-quote">"Beware; for I am fearless, and therefore
+                            powerful." - Mary Shelley</span>
+                        <button class="quote-btn" onclick="shuffleBookQuote('frankenstein')">New Quote</button>
+                    </div>
+                    <p>A layered story about a man who seeks to create a living creature, and the misery that follows
+                        for both the creature and the man who made him. It serves as a cautionary tale about the dangers
+                        of unchecked ambition and the responsibility of creators to their creations.</p>
+                </div>
+            </article>
+
+            <!-- book 4: mere christianity -->
+            <article class="book-review clearfix">
+                <div class="book-cover float-right">
+                    <img src="assets/images/BookCovers/Mere Christianity.jpg" alt="Mere Christianity book cover">
+                </div>
+                <div class="book-text">
+                    <h2>Mere Christianity by C.S. Lewis</h2>
+                    <div class="quote-container">
+                        <span id="quote-mere-christianity" class="book-quote">"If I find in myself desires which nothing
+                            in this world can satisfy, the only logical explanation is that I was made for another
+                            world." - C.S. Lewis</span>
+                        <button class="quote-btn" onclick="shuffleBookQuote('mere-christianity')">New Quote</button>
+                    </div>
+                    <p>An introduction to the worldview held by Christians written for soldiers who were navigating a
+                        world that felt meaningless post WW1. Lewis argues for the logical validity of Christianity and
+                        explains its core tenets with clarity and wit.</p>
+                </div>
+            </article>
+
+            <!-- book 5: the count of monte cristo -->
+            <article class="book-review clearfix">
+                <div class="book-cover float-left">
+                    <img src="assets/images/BookCovers/Monte.jpg" alt="The Count of Monte Cristo book cover">
+                </div>
+                <div class="book-text">
+                    <h2>The Count of Monte Cristo by Alexandre Dumas</h2>
+                    <div class="quote-container">
+                        <span id="quote-monte-cristo" class="book-quote">"All human wisdom is contained in these two
+                            words - Wait and Hope." - Alexandre Dumas</span>
+                        <button class="quote-btn" onclick="shuffleBookQuote('monte-cristo')">New Quote</button>
+                    </div>
+                    <p>A tale of vengeance, justice and Providence set in post-Napoleonic France. It follows Edmond
+                        Dantès as he escapes from prison, acquires a fortune, and sets about exacting revenge on those
+                        responsible for his imprisonment.</p>
+                </div>
+            </article>
+
+            <!-- book 6: the chronicles of narnia -->
+            <article class="book-review clearfix">
+                <div class="book-cover float-right">
+                    <img src="assets/images/BookCovers/Narnia.jpg" alt="The Chronicles of Narnia book cover">
+                </div>
+                <div class="book-text">
+                    <h2>The Chronicles of Narnia by C.S. Lewis</h2>
+                    <div class="quote-container">
+                        <span id="quote-narnia" class="book-quote">"Courage, dear heart." - C.S. Lewis</span>
+                        <button class="quote-btn" onclick="shuffleBookQuote('narnia')">New Quote</button>
+                    </div>
+                    <p>This was the first book I read with my family, and will always be a nostalgic warm memory that
+                        I'm excited to share with my kids. It transports readers to a magical world where animals speak,
+                        magic is real, and good battles evil.</p>
+                </div>
+            </article>
+
+            <!-- book 7: the waves -->
+            <article class="book-review clearfix">
+                <div class="book-cover float-left">
+                    <img src="assets/images/BookCovers/The Waves.jpg" alt="The Waves book cover">
+                </div>
+                <div class="book-text">
+                    <h2>The Waves by Virginia Woolf</h2>
+                    <div class="quote-container">
+                        <span id="quote-waves" class="book-quote">"I am rooted, but I flow." - Virginia Woolf</span>
+                        <button class="quote-btn" onclick="shuffleBookQuote('waves')">New Quote</button>
+                    </div>
+                    <p>A novel that follows the course of one day sunrise to sunset alongside the inner impressions of 6
+                        characters as they navigate life. The story is told through the inmost experiences of the
+                        characters, probing a layer deeper than feelings or thoughts.</p>
+                </div>
+            </article>
+
+            <!-- book 8: the death of ivan ilych -->
+            <article class="book-review clearfix">
+                <div class="book-cover float-right">
+                    <img src="assets/images/BookCovers/The death of Ivan.jpg" alt="The Death of Ivan Ilych book cover">
+                </div>
+                <div class="book-text">
+                    <h2>The Death of Ivan Ilych by Leo Tolstoy</h2>
+                    <div class="quote-container">
+                        <span id="quote-ivan-ilych" class="book-quote">"Maybe I did not live as I ought to have done?" -
+                            Leo Tolstoy</span>
+                        <button class="quote-btn" onclick="shuffleBookQuote('ivan-ilych')">New Quote</button>
+                    </div>
+                    <p>A brief precise depiction of the life and death of one man. Tolstoy strips away the fluff of life
+                        removing the cushion of our existence. It forces the reader to confront the inevitability of
+                        death and the importance of living a meaningful life.</p>
+                </div>
+            </article>
+
+            <!-- book 9: zorba the greek -->
+            <article class="book-review clearfix">
+                <div class="book-cover float-left">
+                    <img src="assets/images/BookCovers/Zorba.jpg" alt="Zorba the Greek book cover">
+                </div>
+                <div class="book-text">
+                    <h2>Zorba the Greek by Nikos Kazantzakis</h2>
+                    <div class="quote-container">
+                        <span id="quote-zorba" class="book-quote">"A man needs a little madness, or else... he never
+                            dares cut the rope and be free." - Nikos Kazantzakis</span>
+                        <button class="quote-btn" onclick="shuffleBookQuote('zorba')">New Quote</button>
+                    </div>
+                    <p>A novel about a young intellectual who tries to escape his bookish life with the help of the
+                        boisterous and mysterious Alexis Zorba.</p>
+                </div>
+            </article>
+
+        </div>
+    </main>
+
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="citations.html">Citations</a></li>
+            </ul>
+        </nav>
+        <div class="footer-social">
+            <a href="https://www.goodreads.com/user/show/109060411-john-gallagher" target="_blank">Goodreads</a> |
+            <a href="https://www.instagram.com/jhngllghr/" target="_blank">Instagram</a> |
+            <a href="https://vsco.co/juunggle/gallery" target="_blank">VSCO</a> |
+            <a href="mailto:contact@picturesandwords.com">Email</a>
+        </div>
+        <p>&copy; 2025 Pictures & Words. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

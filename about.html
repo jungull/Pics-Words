@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Pictures & Words</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&family=Open+Sans:wght@300;400;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Pictures & Words</h1>
+        <button class="hamburger" onclick="toggleMenu()">☰</button>
+        <nav>
+            <ul id="navLinks" class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="pictures.html" class="dropbtn">Pictures ▾</a>
+                    <ul class="dropdown-content">
+                        <li><a href="textures.html">Textures</a></li>
+                        <li><a href="motion.html">Motion</a></li>
+                        <li><a href="negative-space.html">Negative Space</a></li>
+                        <li><a href="composition.html">Composition</a></li>
+                        <li><a href="bugs.html">Bugs</a></li>
+                        <li><a href="flowers.html">Flowers</a></li>
+                    </ul>
+                </li>
+                <li><a href="words.html">Words</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="citations.html">Citations</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="about-content">
+        <div class="container">
+            <h1 class="text-center">About</h1>
+
+            <section>
+                <img src="assets/images/me.jpg" alt="Portrait photograph" class="profile-image">
+
+                <h2>Welcome to Pictures & Words</h2>
+                <p>This is a website is my personal display shelf, where I can stash my collections
+                    of quotes from some of my favorite books, as well as catalogue my photoraphy.</p>
+
+                <div class="social-links">
+                    <h3>Connect With Me</h3>
+                    <a href="https://www.goodreads.com/user/show/109060411-john-gallagher" target="_blank">Goodreads</a>
+                    <a href="https://www.instagram.com/jhngllghr/" target="_blank">Instagram</a>
+                    <a href="https://vsco.co/juunggle/gallery" target="_blank">vsco</a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="citations.html">Citations</a></li>
+            </ul>
+        </nav>
+        <div class="footer-social">
+            <a href="https://www.goodreads.com/user/show/109060411-john-gallagher" target="_blank">Goodreads</a> |
+            <a href="https://www.instagram.com/jhngllghr/" target="_blank">Instagram</a> |
+            <a href="https://vsco.co/juunggle/gallery" target="_blank">VSCO</a> |
+            <a href="mailto:contact@picturesandwords.com">Email</a>
+        </div>
+        <p>&copy; 2025 Pictures & Words. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
