@@ -17,13 +17,14 @@
 <body>
     <header>
         <h1>Pictures & Words</h1>
-        <button class="hamburger" onclick="toggleMenu()">☰</button>
-        <nav>
+        <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+                <nav>
             <ul id="navLinks" class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li class="dropdown">
-                    <a href="pictures.html" class="dropbtn">Pictures ▾</a>
+                    <a href="pictures.html" class="dropbtn">Pictures &#9662;</a>
                     <ul class="dropdown-content">
+                        <li><a href="pictures.html">All Galleries</a></li>
                         <li><a href="textures.html">Textures</a></li>
                         <li><a href="motion.html">Motion</a></li>
                         <li><a href="negative-space.html">Negative Space</a></li>
@@ -33,28 +34,30 @@
                         <li><a href="flowers.html">Flowers</a></li>
                     </ul>
                 </li>
-                <li><a href="words.html">Words</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html" class="active">Contact</a></li>
-                <li><a href="citations.html">Citations</a></li>
+                <li class="dropdown">
+                    <a href="words.html" class="dropbtn">Words &#9662;</a>
+                    <ul class="dropdown-content">
+                        <li><a href="recent-reads.html">Recent Reads</a></li>
+                        <li><a href="words.html">My Top Nine</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="about.html" class="dropbtn">More &#9662;</a>
+                    <ul class="dropdown-content">
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html" class="active">Contact</a></li>
+                        <li><a href="citations.html">Citations</a></li>
+                    </ul>
+                </li>
             </ul>
         </nav>
     </header>
-
     <main>
         <div class="container">
             <h1 class="text-center">Contact</h1>
 
             <section>
-                literature, please reach out.
-                </p>
-
-                <h2>Email Me</h2>
-                <p>For inquiries, please email me at: <a
-                        href="mailto:contact@picturesandwords.com">contact@picturesandwords.com</a>
-                </p>
-
-                <h2>Let Me Know How I Can Help</h2>
+                <h1 class="text-center"> Reach out, I'd love to hear from you! </h1>
                 <form onsubmit="return handleFormSubmit()">
                     <fieldset>
                         <legend>What brings you here today?</legend>
@@ -73,13 +76,20 @@
                             <input type="radio" name="contactReason" value="photoshoot">
                             Request a photoshoot
                         </label>
+
+                        <label>
+                            <input type="radio" name="contactReason" value="other">
+                            Other
+                        </label>
+
+
                     </fieldset>
 
                     <label for="name">Your Name:</label>
-                    <input type="text" id="name" name="name" required>
+                    <input type="text" id="name" name="name">
 
                     <label for="email">Your Email:</label>
-                    <input type="email" id="email" name="email" required>
+                    <input type="email" id="email" name="email">
 
                     <label for="message">Message:</label>
                     <textarea id="message" name="message" rows="6" required></textarea>
@@ -93,17 +103,13 @@
     </main>
 
     <footer>
-        <nav>
-            <ul>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="citations.html">Citations</a></li>
-            </ul>
-        </nav>
         <div class="footer-social">
-            <a href="https://www.goodreads.com/user/show/109060411-john-gallagher" target="_blank">Goodreads</a> |
-            <a href="https://www.instagram.com/jhngllghr/" target="_blank">Instagram</a> |
-            <a href="https://vsco.co/juunggle/gallery" target="_blank">VSCO</a> |
+            <a href="about.html">About |</a>
+            <a href="contact.html">Contact |</a>
+            <a href="citations.html">Citations |</a>
+            <a href="https://www.goodreads.com/user/show/109060411-john-gallagher" target="_blank">Goodreads |</a>
+            <a href="https://www.instagram.com/jhngllghr/" target="_blank">Instagram |</a>
+            <a href="https://vsco.co/juunggle/gallery" target="_blank">VSCO |</a>
             <a href="mailto:contact@picturesandwords.com">Email</a>
         </div>
         <p>&copy; 2025 Pictures & Words. All rights reserved.</p>

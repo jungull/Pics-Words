@@ -17,131 +17,86 @@
 <body>
     <header>
         <h1>Pictures & Words</h1>
-        <button class="hamburger" onclick="toggleMenu()">☰</button>
-        <nav>
+        <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+                <nav>
             <ul id="navLinks" class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li class="dropdown">
-                    <a href="pictures.html" class="dropbtn active">Pictures ▾</a>
+                    <a href="pictures.html" class="dropbtn">Pictures &#9662;</a>
                     <ul class="dropdown-content">
+                        <li><a href="pictures.html">All Galleries</a></li>
                         <li><a href="textures.html">Textures</a></li>
                         <li><a href="motion.html">Motion</a></li>
                         <li><a href="negative-space.html">Negative Space</a></li>
                         <li><a href="composition.html">Composition</a></li>
                         <li><a href="bugs.html">Bugs</a></li>
-                        <li><a href="bug-videos.html">Bug Videos</a></li>
-
+                        <li><a href="bug-videos.html" class="active">Bug Videos</a></li>
                         <li><a href="flowers.html">Flowers</a></li>
                     </ul>
                 </li>
-                <li><a href="words.html">Words</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="citations.html">Citations</a></li>
+                <li class="dropdown">
+                    <a href="words.html" class="dropbtn">Words &#9662;</a>
+                    <ul class="dropdown-content">
+                        <li><a href="recent-reads.html">Recent Reads</a></li>
+                        <li><a href="words.html">My Top Nine</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="about.html" class="dropbtn">More &#9662;</a>
+                    <ul class="dropdown-content">
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="citations.html">Citations</a></li>
+                    </ul>
+                </li>
             </ul>
         </nav>
     </header>
 
-    <!-- sidebar navigation to words -->
-    <div class="sidebar sidebar-right">
-        <a href="index.html">Words</a>
-    </div>
-
     <main>
         <div class="container">
             <h1 class="text-center">Bug Videos</h1>
-            <p class="text-center"><a href="pictures.html">← Back to All Galleries</a></p>
+            <p class="text-center"><a href="pictures.html">&#8592; Back to All Galleries</a></p>
             <p class="text-center readable-text">Observing the small movements of the insect world reveals a hidden
                 layer of life often overlooked.</p>
 
-            <section class="image-grid">
-                <figure>
-                    <video controls width="100%">
-                        <source src="assets/video/bug videos/IMG_0209.MP4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                    <figcaption>Bug Video 1</figcaption>
-                </figure>
-
-                <figure>
-                    <video controls width="100%">
-                        <source src="assets/video/bug videos/IMG_2688.MP4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                    <figcaption>Bug Video 2</figcaption>
-                </figure>
-
-                <figure>
-                    <video controls width="100%">
-                        <source src="assets/video/bug videos/IMG_5038.MP4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                    <figcaption>Bug Video 3</figcaption>
-                </figure>
-
-                <figure>
-                    <video controls width="100%">
-                        <source src="assets/video/bug videos/IMG_7496.MP4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                    <figcaption>Bug Video 4</figcaption>
-                </figure>
-
-                <figure>
-                    <video controls width="100%">
-                        <source src="assets/video/bug videos/IMG_8897.MP4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                    <figcaption>Bug Video 5</figcaption>
-                </figure>
-
-                <figure>
+            <div class="row">
+  <div class="column">
+    <figure>
                     <video controls width="100%">
                         <source src="assets/video/bug videos/IMG_9117.MOV" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
-                    <figcaption>Bug Video 6</figcaption>
                 </figure>
-
-                <figure>
+  </div>
+  <div class="column">
+    <figure>
                     <video controls width="100%">
                         <source src="assets/video/bug videos/IMG_9125.MOV" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
-                    <figcaption>Bug Video 7</figcaption>
                 </figure>
-
-                <figure>
-                    <video controls width="100%">
-                        <source src="assets/video/bug videos/IMG_9127.MP4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                    <figcaption>Bug Video 8</figcaption>
-                </figure>
-
-                <figure>
+  </div>
+  <div class="column">
+    <figure>
                     <video controls width="100%">
                         <source src="assets/video/bug videos/IMG_9133.MOV" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
-                    <figcaption>Bug Video 9</figcaption>
                 </figure>
-            </section>
+  </div>
+</div>
         </div>
     </main>
 
     <footer>
-        <nav>
-            <ul>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="citations.html">Citations</a></li>
-            </ul>
-        </nav>
         <div class="footer-social">
-            <a href="https://www.goodreads.com/user/show/109060411-john-gallagher" target="_blank">Goodreads</a> |
-            <a href="https://www.instagram.com/jhngllghr/" target="_blank">Instagram</a> |
-            <a href="https://vsco.co/juunggle/gallery" target="_blank">VSCO</a> |
+            <a href="about.html">About |</a>
+            <a href="contact.html">Contact |</a>
+            <a href="citations.html">Citations |</a>
+            <a href="https://www.goodreads.com/user/show/109060411-john-gallagher" target="_blank">Goodreads |</a>
+            <a href="https://www.instagram.com/jhngllghr/" target="_blank">Instagram |</a>
+            <a href="https://vsco.co/juunggle/gallery" target="_blank">VSCO |</a>
             <a href="mailto:contact@picturesandwords.com">Email</a>
         </div>
         <p>&copy; 2025 Pictures & Words. All rights reserved.</p>

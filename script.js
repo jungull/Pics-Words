@@ -17,6 +17,48 @@ function toggleMenu() {
 // Shuffle Image Function
 function shuffleImage() {
     var images = [
+        // Textures
+        'assets/images/textures/sunset-on-glass.jpg',
+        'assets/images/textures/IMG_9892.jpg',
+        'assets/images/textures/slowshutterwater.jpg',
+        'assets/images/textures/fastshutterwater.jpg',
+        'assets/images/textures/IMG_3968.jpg',
+        'assets/images/textures/treebark3.jpg',
+        'assets/images/textures/Curtains.jpg',
+        'assets/images/textures/DOOR.jpg',
+        'assets/images/textures/grass.jpg',
+        'assets/images/textures/Ice.jpg',
+        'assets/images/textures/sidewalk.jpg',
+        'assets/images/textures/treebark4.jpg',
+        'assets/images/textures/water.JPG',
+        'assets/images/textures/moss and pine.jpg',
+        'assets/images/textures/lillypad.jpg',
+        'assets/images/textures/roof.jpg',
+        'assets/images/textures/IMG_3408.jpg',
+        'assets/images/textures/IMG_3424.jpg',
+        'assets/images/textures/Mountainside.jpg',
+        'assets/images/textures/oar-ripple.jpg',
+        'assets/images/textures/tree.jpg',
+
+        // Negative Space
+        'assets/images/Negative Space/IMG_1722.jpg',
+        'assets/images/Negative Space/IMG_9083.jpg',
+        'assets/images/Negative Space/frog.jpg',
+        'assets/images/Negative Space/grass-feet.jpg',
+        'assets/images/Negative Space/grass_shoes.jpg',
+        'assets/images/Negative Space/lysh peakin.jpg',
+        'assets/images/Negative Space/lysh-sky.jpg',
+        'assets/images/Negative Space/richie-grass.jpg',
+        'assets/images/Negative Space/IMG_1902.jpg',
+        'assets/images/Negative Space/Lamp.jpg',
+
+        // Motion
+        'assets/images/Motion/000061630025.jpg',
+        'assets/images/Motion/Bike.jpg',
+        'assets/images/Motion/IMG_2335.jpg',
+        'assets/images/Motion/marco!.jpg',
+        'assets/images/Motion/IMG_0204.jpg',
+
         // Composition
         'assets/images/Composition/IMG_3371.jpg',
         'assets/images/Composition/IMG_9128.jpg',
@@ -24,68 +66,7 @@ function shuffleImage() {
         'assets/images/Composition/Placid.jpg',
         'assets/images/Composition/blanc.jpg',
         'assets/images/Composition/church.jpg',
-        'assets/images/Composition/maxhike.jpg',
-        // Flowers
-        'assets/images/flower/flower.jpg',
-        'assets/images/flower/flower2.jpg',
-        'assets/images/flower/flower green.jpg',
-        'assets/images/flower/flower purple.jpg',
-        'assets/images/flower/flower red.jpg',
-        'assets/images/flower/flower yellow.jpg',
-        'assets/images/flower/flower yg.jpg',
-        // Framing
-        'assets/images/Framing/HoopDreams.jpg',
-        'assets/images/Framing/IMG_1008.jpg',
-        'assets/images/Framing/IMG_3371.jpg',
-        'assets/images/Framing/IMG_3408.jpg',
-        'assets/images/Framing/IMG_3968.jpg',
-        'assets/images/Framing/IMG_5760.jpg',
-        'assets/images/Framing/fire-cookin.jpg',
-        'assets/images/Framing/half-horse.jpg',
-        'assets/images/Framing/monke.jpg',
-        // Motion
-        'assets/images/Motion/000061630025.jpg',
-        'assets/images/Motion/IMG_0204.jpg',
-        'assets/images/Motion/IMG_2335.jpg',
-        'assets/images/Motion/marco!.jpg',
-        // Negative Space
-        'assets/images/Negative Space/IMG_0868.jpg',
-        'assets/images/Negative Space/IMG_1722.jpg',
-        'assets/images/Negative Space/IMG_1902.jpg',
-        'assets/images/Negative Space/IMG_9083.jpg',
-        'assets/images/Negative Space/Lamp.jpg',
-        'assets/images/Negative Space/frog.jpg',
-        'assets/images/Negative Space/grass-feet.jpg',
-        'assets/images/Negative Space/grass_shoes.jpg',
-        'assets/images/Negative Space/lysh peakin.jpg',
-        'assets/images/Negative Space/lysh-sky.jpg',
-        'assets/images/Negative Space/richie-grass.jpg',
-        // Textures
-        'assets/images/textures/Curtains.jpg',
-        'assets/images/textures/DOOR.jpg',
-        'assets/images/textures/IMG_3408.jpg',
-        'assets/images/textures/IMG_3424.jpg',
-        'assets/images/textures/IMG_3968.jpg',
-        'assets/images/textures/IMG_5008.jpg',
-        'assets/images/textures/IMG_5760.jpg',
-        'assets/images/textures/IMG_9892.jpg',
-        'assets/images/textures/Ice.jpg',
-        'assets/images/textures/Mountainside.jpg',
-        'assets/images/textures/fastshutterwater.jpg',
-        'assets/images/textures/forest.jpg',
-        'assets/images/textures/lillypad.jpg',
-        'assets/images/textures/moss and pine.jpg',
-        'assets/images/textures/oar-ripple.jpg',
-        'assets/images/textures/roof.jpg',
-        'assets/images/textures/sidewalk.jpg',
-        'assets/images/textures/slowshutterwater.jpg',
-        'assets/images/textures/sunset-on-glass.jpg',
-        'assets/images/textures/tree.jpg',
-        'assets/images/textures/treebark1.jpg',
-        'assets/images/textures/treebark2.jpg',
-        'assets/images/textures/treebark3.jpg',
-        'assets/images/textures/treebark4.jpg',
-        'assets/images/textures/water.JPG'
+        'assets/images/Composition/maxhike.jpg'
     ];
 
     var randomIndex = Math.floor(Math.random() * images.length);
@@ -208,53 +189,19 @@ function handleFormSubmit() {
     }
 
     // Display response based on selection
-    if (selectedValue === 'question') {
-        formResponse.innerHTML = 'Thank you! I\'ll get back to your question as soon as possible.';
-    } else if (selectedValue === 'collaboration') {
-        formResponse.innerHTML = 'Exciting! I\'d love to discuss collaboration opportunities with you.';
-    } else if (selectedValue === 'feedback') {
-        formResponse.innerHTML = 'I appreciate your feedback! It helps me improve my work.';
-    } else if (selectedValue === 'email') {
-        formResponse.innerHTML = 'I\'ll respond to your email within 24-48 hours.';
-    } else if (selectedValue === 'phone') {
-        formResponse.innerHTML = 'I\'ll give you a call during business hours.';
-    } else if (selectedValue === 'social') {
-        formResponse.innerHTML = 'Feel free to message me on social media!';
-    } else {
-        formResponse.innerHTML = 'Thank you for your message!';
+    if (selectedValue === 'recommendation') {
+        formResponse.innerHTML = 'Thanks for reccomonding a book!';
+    } else if (selectedValue === 'quote') {
+        formResponse.innerHTML = 'Thanks for submitting a quote!';
+    } else if (selectedValue === 'photoshoot') {
+        formResponse.innerHTML = 'I will reach out within 48 hours to discuss the details';
+    } else if (selectedValue === 'other') {
+        formResponse.innerHTML = 'Thanks for visiting my site, looking forward to reading your message!.';
+
+        formResponse.style.display = 'block';
+
+        return false;
     }
-
-    formResponse.style.display = 'block';
-
-    return false; // Prevent form submission
-}
-
-
-
-// --- Back to Top Button ---
-function createBackToTop() {
-    if (document.getElementById('backToTop')) return;
-
-    const backToTopBtn = document.createElement('button');
-    backToTopBtn.id = 'backToTop';
-    backToTopBtn.innerHTML = '&#8679;'; // Up arrow
-    backToTopBtn.title = 'Go to top';
-    document.body.appendChild(backToTopBtn);
-
-    window.addEventListener('scroll', function () {
-        if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
-            backToTopBtn.style.display = "block";
-        } else {
-            backToTopBtn.style.display = "none";
-        }
-    });
-
-    backToTopBtn.addEventListener('click', function () {
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-        });
-    });
 }
 
 // --- Active Nav Link Highlighting ---
@@ -274,7 +221,5 @@ function highlightActiveNav() {
 
 // Initialize on Load
 document.addEventListener('DOMContentLoaded', function () {
-
-    createBackToTop();
     highlightActiveNav();
 });

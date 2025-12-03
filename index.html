@@ -18,13 +18,14 @@
 <body>
     <header>
         <h1>Pictures & Words</h1>
-        <button class="hamburger" onclick="toggleMenu()">☰</button>
-        <nav>
+        <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+                <nav>
             <ul id="navLinks" class="nav-links">
                 <li><a href="index.html" class="active">Home</a></li>
                 <li class="dropdown">
-                    <a href="pictures.html" class="dropbtn">Pictures ▾</a>
+                    <a href="pictures.html" class="dropbtn">Pictures &#9662;</a>
                     <ul class="dropdown-content">
+                        <li><a href="pictures.html">All Galleries</a></li>
                         <li><a href="textures.html">Textures</a></li>
                         <li><a href="motion.html">Motion</a></li>
                         <li><a href="negative-space.html">Negative Space</a></li>
@@ -34,15 +35,34 @@
                         <li><a href="flowers.html">Flowers</a></li>
                     </ul>
                 </li>
-                <li><a href="words.html">Words</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="citations.html">Citations</a></li>
+                <li class="dropdown">
+                    <a href="words.html" class="dropbtn">Words &#9662;</a>
+                    <ul class="dropdown-content">
+                        <li><a href="recent-reads.html">Recent Reads</a></li>
+                        <li><a href="words.html">My Top Nine</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="about.html" class="dropbtn">More &#9662;</a>
+                    <ul class="dropdown-content">
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="citations.html">Citations</a></li>
+                    </ul>
+                </li>
             </ul>
         </nav>
     </header>
 
     <main>
+        <div>
+            <h1>Pictures & Words</h1>
+            <p>Welcome to Pictures & Words A website hosting photos and quotes I've collected. on the words side of the
+                site, you can see my recent reads, and a page listing my current favorite 9 books. on the pictures side
+                you can browse galleries of my photos divided by the stylistic focus of the picturesr. you can also
+                generate a random photo or quote using the below boxes. Visit the about page to learn more, and connect
+                with me on the social links in the footer of each page. Thankyou for visiting!</p>
+        </div>
         <div class="split-container">
             <section class="split-section">
                 <h2>Pictures</h2>
@@ -50,7 +70,7 @@
                     <p class="caption">Click to Shuffle Image</p>
                     <img id="shuffleImageDisplay" src="" alt="" style="display: none;">
                 </div>
-                <p><a href="pictures.html">View All Galleries →</a></p>
+                <p><a href="pictures.html">View All Galleries &#8594;</a></p>
             </section>
 
             <section class="split-section">
@@ -59,23 +79,19 @@
                     <p class="caption">Click to Shuffle Quote</p>
                     <p id="shuffleQuoteDisplay">Click above to see a random quote</p>
                 </div>
-                <p><a href="words.html">Read Book Reviews →</a></p>
+                <p><a href="words.html">Read Book Reviews &#8594;</a></p>
             </section>
         </div>
     </main>
 
     <footer>
-        <nav>
-            <ul>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="citations.html">Citations</a></li>
-            </ul>
-        </nav>
         <div class="footer-social">
-            <a href="https://www.goodreads.com/user/show/109060411-john-gallagher" target="_blank">Goodreads</a> |
-            <a href="https://www.instagram.com/jhngllghr/" target="_blank">Instagram</a> |
-            <a href="https://vsco.co/juunggle/gallery" target="_blank">VSCO</a> |
+            <a href="about.html">About |</a>
+            <a href="contact.html">Contact |</a>
+            <a href="citations.html">Citations |</a>
+            <a href="https://www.goodreads.com/user/show/109060411-john-gallagher" target="_blank">Goodreads |</a>
+            <a href="https://www.instagram.com/jhngllghr/" target="_blank">Instagram |</a>
+            <a href="https://vsco.co/juunggle/gallery" target="_blank">VSCO |</a>
             <a href="mailto:contact@picturesandwords.com">Email</a>
         </div>
         <p>&copy; 2025 Pictures & Words. All rights reserved.</p>

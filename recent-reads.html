@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recent Reads - Pictures & Words</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&family=Open+Sans:wght@300;400;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Pictures & Words</h1>
+        <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+                <nav>
+            <ul id="navLinks" class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="pictures.html" class="dropbtn">Pictures &#9662;</a>
+                    <ul class="dropdown-content">
+                        <li><a href="pictures.html">All Galleries</a></li>
+                        <li><a href="textures.html">Textures</a></li>
+                        <li><a href="motion.html">Motion</a></li>
+                        <li><a href="negative-space.html">Negative Space</a></li>
+                        <li><a href="composition.html">Composition</a></li>
+                        <li><a href="bugs.html">Bugs</a></li>
+                        <li><a href="bug-videos.html">Bug Videos</a></li>
+                        <li><a href="flowers.html">Flowers</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="words.html" class="dropbtn">Words &#9662;</a>
+                    <ul class="dropdown-content">
+                        <li><a href="recent-reads.html" class="active">Recent Reads</a></li>
+                        <li><a href="words.html">My Top Nine</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="about.html" class="dropbtn">More &#9662;</a>
+                    <ul class="dropdown-content">
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="citations.html">Citations</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1 class="text-center">Recent Reads</h1>
+            <table>
+                <tr>
+                    <th>Book</th>
+                    <th>Author</th>
+                    <th>Genre</th>
+                    <th>Rating</th>
+                </tr>
+                <tr>
+                    <td>Foster</td>
+                    <td>Claire Keegan</td>
+                    <td>Fiction</td>
+                    <td>10/10</td>
+                </tr>
+                <tr>
+                    <td>Storm of Steel</td>
+                    <td>Ernst Junger</td>
+                    <td>Nonfiction</td>
+                    <td>9/10</td>
+                </tr>
+                <tr>
+                    <td>Steppenwolf</td>
+                    <td>Hermann Hesse</td>
+                    <td>Fiction</td>
+                    <td>6/10</td>
+                </tr>
+                <tr>
+                    <td>History of the Peloponnesian War</td>
+                    <td>Thucydides</td>
+                    <td>Nonfiction</td>
+                    <td>5/10</td>
+                </tr>
+            </table>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-social">
+            <a href="about.html">About |</a>
+            <a href="contact.html">Contact |</a>
+            <a href="citations.html">Citations |</a>
+            <a href="https://www.goodreads.com/user/show/109060411-john-gallagher" target="_blank">Goodreads |</a>
+            <a href="https://www.instagram.com/jhngllghr/" target="_blank">Instagram |</a>
+            <a href="https://vsco.co/juunggle/gallery" target="_blank">VSCO |</a>
+            <a href="mailto:contact@picturesandwords.com">Email</a>
+        </div>
+        <p>&copy; 2025 Pictures & Words. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

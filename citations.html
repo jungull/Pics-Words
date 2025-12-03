@@ -18,13 +18,14 @@
 <body>
     <header>
         <h1>Pictures & Words</h1>
-        <button class="hamburger" onclick="toggleMenu()">☰</button>
+        <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
         <nav>
             <ul id="navLinks" class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li class="dropdown">
-                    <a href="pictures.html" class="dropbtn">Pictures ▾</a>
+                    <a href="pictures.html" class="dropbtn">Pictures &#9662;</a>
                     <ul class="dropdown-content">
+                        <li><a href="pictures.html">All Galleries</a></li>
                         <li><a href="textures.html">Textures</a></li>
                         <li><a href="motion.html">Motion</a></li>
                         <li><a href="negative-space.html">Negative Space</a></li>
@@ -34,14 +35,24 @@
                         <li><a href="flowers.html">Flowers</a></li>
                     </ul>
                 </li>
-                <li><a href="words.html">Words</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="citations.html" class="active">Citations</a></li>
+                <li class="dropdown">
+                    <a href="words.html" class="dropbtn">Words &#9662;</a>
+                    <ul class="dropdown-content">
+                        <li><a href="recent-reads.html">Recent Reads</a></li>
+                        <li><a href="words.html">My Top Nine</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="about.html" class="dropbtn">More &#9662;</a>
+                    <ul class="dropdown-content">
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="citations.html" class="active">Citations</a></li>
+                    </ul>
+                </li>
             </ul>
         </nav>
     </header>
-
     <main>
         <div class="container">
             <h1 class="text-center">Works Cited</h1>
@@ -147,27 +158,36 @@
                         Accessed 19 Nov. 2025.</li>
                 </ul>
 
+
                 <h2>Content Attribution</h2>
                 <ul>
                     <li>All photographs in the Pictures galleries are original works by John Gallagher, taken between
                         2020-2025.</li>
                 </ul>
             </section>
+            <section>
+                <h2>Web Development Resources</h2>
+                <ul>
+                    <li>Responsive Image Grid. <i>W3Schools</i>. W3Schools, <a
+                            href="https://www.w3schools.com/howto/howto_css_image_grid_responsive.asp"
+                            target="_blank">https://www.w3schools.com/howto/howto_css_image_grid_responsive.asp</a>.
+                        Accessed 02 Dec. 2025.</li>
+                    <li>CSS Frosted Glass Effect. <i>W3Schools</i>. W3Schools, <a
+                            href="https://www.w3schools.com/howto/howto_css_frosted_glass.asp"
+                            target="_blank">https://www.w3schools.com/howto/howto_css_frosted_glass.asp</a>. Accessed 03 Dec. 2025.</li>
+                </ul>
+            </section>
         </div>
     </main>
 
     <footer>
-        <nav>
-            <ul>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="citations.html">Citations</a></li>
-            </ul>
-        </nav>
         <div class="footer-social">
-            <a href="https://www.goodreads.com/user/show/109060411-john-gallagher" target="_blank">Goodreads</a> |
-            <a href="https://www.instagram.com/jhngllghr/" target="_blank">Instagram</a> |
-            <a href="https://vsco.co/juunggle/gallery" target="_blank">VSCO</a> |
+            <a href="about.html">About |</a>
+            <a href="contact.html">Contact |</a>
+            <a href="citations.html">Citations |</a>
+            <a href="https://www.goodreads.com/user/show/109060411-john-gallagher" target="_blank">Goodreads |</a>
+            <a href="https://www.instagram.com/jhngllghr/" target="_blank">Instagram |</a>
+            <a href="https://vsco.co/juunggle/gallery" target="_blank">VSCO |</a>
             <a href="mailto:contact@picturesandwords.com">Email</a>
         </div>
         <p>&copy; 2025 Pictures & Words. All rights reserved.</p>

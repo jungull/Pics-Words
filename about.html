@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About - Pictures & Words</title>
 
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css?v=7">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -17,13 +17,14 @@
 <body>
     <header>
         <h1>Pictures & Words</h1>
-        <button class="hamburger" onclick="toggleMenu()">☰</button>
-        <nav>
+        <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+                <nav>
             <ul id="navLinks" class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li class="dropdown">
-                    <a href="pictures.html" class="dropbtn">Pictures ▾</a>
+                    <a href="pictures.html" class="dropbtn">Pictures &#9662;</a>
                     <ul class="dropdown-content">
+                        <li><a href="pictures.html">All Galleries</a></li>
                         <li><a href="textures.html">Textures</a></li>
                         <li><a href="motion.html">Motion</a></li>
                         <li><a href="negative-space.html">Negative Space</a></li>
@@ -33,10 +34,21 @@
                         <li><a href="flowers.html">Flowers</a></li>
                     </ul>
                 </li>
-                <li><a href="words.html">Words</a></li>
-                <li><a href="about.html" class="active">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="citations.html">Citations</a></li>
+                <li class="dropdown">
+                    <a href="words.html" class="dropbtn">Words &#9662;</a>
+                    <ul class="dropdown-content">
+                        <li><a href="recent-reads.html">Recent Reads</a></li>
+                        <li><a href="words.html">My Top Nine</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="about.html" class="dropbtn">More &#9662;</a>
+                    <ul class="dropdown-content">
+                        <li><a href="about.html" class="active">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="citations.html">Citations</a></li>
+                    </ul>
+                </li>
             </ul>
         </nav>
     </header>
@@ -46,12 +58,53 @@
             <h1 class="text-center">About</h1>
 
             <section>
-                <img src="assets/images/me.jpg" alt="Portrait photograph" class="profile-image">
+                <img src="assets/images/me.jpg" alt="Portrait photograph" class="profile-image" id="about-profile-pic">
 
                 <h2>Welcome to Pictures & Words</h2>
-                <p>This is a website is my personal display shelf, where I can stash my collections
-                    of quotes from some of my favorite books, as well as catalogue my photoraphy.</p>
+                <p>This website is my personal display shelf, where I can stash my collections of quotes from some of my
+                    favorite books, as well as catalogue my photography.</p>
+                <hr>
+                <div class="about-grid">
+                    <div class="about-column">
+                        <h2>Why I Like Photography</h2>
+                        <p>The tragedy of experiencing something beautiful is that it's going to die. That is
+                            intentionally
+                            dramatic phrasing, but photography, while not immortalizing moments, at least helps them to
+                            last. It
+                            serves as a tangible touchstone to bring you back to a place that would otherwise only exist
+                            in your
+                            memory. Photos become launching points for stories—a way to share an experience with those
+                            who
+                            weren't there. And that's nice.</p>
+                    </div>
+                    <div class="about-column">
+                        <h2>Why I Like Books</h2>
+                        <p>Books take a long time to write, especially good ones. In a few pages, you can read something
+                            that
+                            may have taken the author 20 years to understand. Just as photos capture moments, books
+                            capture
+                            ideas. Reading classics like the <em>Iliad</em> or Greek tragedies provides a common ground
+                            between
+                            myself and everyone who has read or heard those stories. I often imagine an afterlife where
+                            I can
+                            discuss favorite passages from the <em>Iliad</em> or <em>Odyssey</em> with someone who lived
+                            thousands of years ago. Besides the connection to the past, books help me to work through my
+                            own
+                            beliefs. The fact that written arguments defending the beliefs of people from the past exist
+                            means
+                            people can understand and carry that conversation forward into the future. I'm currently
+                            reconsidering my Protestant worldview, and instead of having to work out everything on my
+                            own, I can
+                            read the words of Martin Luther and have him explain to me the necessity of breaking from
+                            the
+                            Catholic Church, or go back further and read the Church Fathers having them explain to me
+                            why the
+                            Orthodox Church today stands apart from Catholicism.</p>
+                    </div>
+                </div>
+            </section>
 
+            <section>
                 <div class="social-links">
                     <h3>Connect With Me</h3>
                     <a href="https://www.goodreads.com/user/show/109060411-john-gallagher" target="_blank">Goodreads</a>
@@ -63,17 +116,13 @@
     </main>
 
     <footer>
-        <nav>
-            <ul>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="citations.html">Citations</a></li>
-            </ul>
-        </nav>
         <div class="footer-social">
-            <a href="https://www.goodreads.com/user/show/109060411-john-gallagher" target="_blank">Goodreads</a> |
-            <a href="https://www.instagram.com/jhngllghr/" target="_blank">Instagram</a> |
-            <a href="https://vsco.co/juunggle/gallery" target="_blank">VSCO</a> |
+            <a href="about.html">About |</a>
+            <a href="contact.html">Contact |</a>
+            <a href="citations.html">Citations |</a>
+            <a href="https://www.goodreads.com/user/show/109060411-john-gallagher" target="_blank">Goodreads |</a>
+            <a href="https://www.instagram.com/jhngllghr/" target="_blank">Instagram |</a>
+            <a href="https://vsco.co/juunggle/gallery" target="_blank">VSCO |</a>
             <a href="mailto:contact@picturesandwords.com">Email</a>
         </div>
         <p>&copy; 2025 Pictures & Words. All rights reserved.</p>

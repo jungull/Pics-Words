@@ -18,26 +18,38 @@
 <body>
     <header>
         <h1>Pictures & Words</h1>
-        <button class="hamburger" onclick="toggleMenu()">☰</button>
-        <nav>
+        <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+                <nav>
             <ul id="navLinks" class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li class="dropdown">
-                    <a href="pictures.html" class="dropbtn active">Pictures ▾</a>
+                    <a href="pictures.html" class="dropbtn">Pictures &#9662;</a>
                     <ul class="dropdown-content">
+                        <li><a href="pictures.html">All Galleries</a></li>
                         <li><a href="textures.html">Textures</a></li>
                         <li><a href="motion.html">Motion</a></li>
                         <li><a href="negative-space.html">Negative Space</a></li>
                         <li><a href="composition.html">Composition</a></li>
-                        <li><a href="bugs.html">Bugs</a></li>
+                        <li><a href="bugs.html" class="active">Bugs</a></li>
                         <li><a href="bug-videos.html">Bug Videos</a></li>
                         <li><a href="flowers.html">Flowers</a></li>
                     </ul>
                 </li>
-                <li><a href="words.html">Words</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="citations.html">Citations</a></li>
+                <li class="dropdown">
+                    <a href="words.html" class="dropbtn">Words &#9662;</a>
+                    <ul class="dropdown-content">
+                        <li><a href="recent-reads.html">Recent Reads</a></li>
+                        <li><a href="words.html">My Top Nine</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="about.html" class="dropbtn">More &#9662;</a>
+                    <ul class="dropdown-content">
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="citations.html">Citations</a></li>
+                    </ul>
+                </li>
             </ul>
         </nav>
     </header>
@@ -50,92 +62,69 @@
     <main>
         <div class="container">
             <h1 class="text-center">Bugs</h1>
-            <p class="text-center"><a href="pictures.html">← Back to All Galleries</a></p>
+            <p class="text-center"><a href="pictures.html">&#8592; Back to All Galleries</a></p>
 
-            <section class="image-grid">
-                <figure>
+            <div class="row">
+  <div class="column">
+    <figure>
                     <img src="assets/images/bugs/cricket.jpg"
                         alt="Cricket perched on a leaf showing detailed body structure">
-                    <figcaption>Cricket on Leaf</figcaption>
                 </figure>
-
-                <figure>
-                    <img src="assets/images/bugs/cutespider.JPG" alt="Small jumping spider with large eyes">
-                    <figcaption>Jumping Spider</figcaption>
-                </figure>
-
-                <figure>
-                    <img src="assets/images/bugs/dragon.jpg" alt="Dragonfly with iridescent wings and compound eyes">
-                    <figcaption>Dragonfly Detail</figcaption>
-                </figure>
-
-                <figure>
-                    <img src="assets/images/bugs/frightful.jpg"
-                        alt="Dramatic insect photograph showing unique features">
-                    <figcaption>Frightful Creature</figcaption>
-                </figure>
-
-                <figure>
-                    <img src="assets/images/bugs/gulag spider.jpg" alt="Spider in web showing intricate detail">
-                    <figcaption>Spider in Web</figcaption>
-                </figure>
-
-                <figure>
-                    <img src="assets/images/bugs/locus.jpg" alt="Locust showing detailed exoskeleton and legs">
-                    <figcaption>Locust Close-up</figcaption>
-                </figure>
-
-                <figure>
-                    <img src="assets/images/bugs/moth.jpg" alt="Moth with detailed wing patterns and fuzzy body">
-                    <figcaption>Moth Wing Patterns</figcaption>
-                </figure>
-
-                <figure>
-                    <img src="assets/images/bugs/spider.JPG" alt="Garden spider on web waiting for prey">
-                    <figcaption>Garden Spider</figcaption>
-                </figure>
-
-                <figure>
+    <figure>
                     <img src="assets/images/bugs/stickbug.jpg" alt="Stick insect camouflaged on branch">
-                    <figcaption>Stick Insect Camouflage</figcaption>
                 </figure>
-
-                <figure>
-                    <img src="assets/images/bugs/t-hawk.jpg" alt="Tomato hornworm showing distinctive markings">
-                    <figcaption>Tomato Hawk</figcaption>
+    <figure>
+                    <img src="assets/images/bugs/t-hawk.jpg" alt="Tarantula Hawk in the grass">
                 </figure>
-
-                <figure>
+    <figure>
                     <img src="assets/images/bugs/toad.jpg" alt="Toad with textured skin in natural habitat">
-                    <figcaption>Toad Portrait</figcaption>
                 </figure>
-
-                <figure>
+    <figure>
                     <img src="assets/images/bugs/wasps.jpg" alt="Wasps building paper nest">
-                    <figcaption>Wasps on Nest</figcaption>
                 </figure>
-
-                <figure>
+  </div>
+  <div class="column">
+    <figure>
                     <img src="assets/images/bugs/yellow jacket.jpg"
                         alt="Yellow jacket wasp showing distinctive yellow and black stripes">
-                    <figcaption>Yellow Jacket</figcaption>
                 </figure>
-            </section>
+    <figure>
+                    <img src="assets/images/bugs/cutespider.JPG" alt="Small jumping spider with large eyes">
+                </figure>
+    <figure>
+                    <img src="assets/images/bugs/dragon.jpg" alt="A dragonfly">
+                </figure>
+    <figure>
+                    <img src="assets/images/bugs/frightful.jpg"
+                        alt="An unknown insect nxt to a mini snickers bar with the word frightful printed on it">
+                </figure>
+  </div>
+  <div class="column">
+    <figure>
+                    <img src="assets/images/bugs/gulag spider.jpg" alt="A spider on a book">
+                </figure>
+    <figure>
+                    <img src="assets/images/bugs/locus.jpg" alt="A Locust">
+                </figure>
+    <figure>
+                    <img src="assets/images/bugs/moth.jpg" alt="A Moth">
+                </figure>
+    <figure>
+                    <img src="assets/images/bugs/spider.JPG" alt="a spider">
+                </figure>
+  </div>
+</div>
         </div>
     </main>
 
     <footer>
-        <nav>
-            <ul>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="citations.html">Citations</a></li>
-            </ul>
-        </nav>
         <div class="footer-social">
-            <a href="https://www.goodreads.com/user/show/109060411-john-gallagher" target="_blank">Goodreads</a> |
-            <a href="https://www.instagram.com/jhngllghr/" target="_blank">Instagram</a> |
-            <a href="https://vsco.co/juunggle/gallery" target="_blank">VSCO</a> |
+            <a href="about.html">About |</a>
+            <a href="contact.html">Contact |</a>
+            <a href="citations.html">Citations |</a>
+            <a href="https://www.goodreads.com/user/show/109060411-john-gallagher" target="_blank">Goodreads |</a>
+            <a href="https://www.instagram.com/jhngllghr/" target="_blank">Instagram |</a>
+            <a href="https://vsco.co/juunggle/gallery" target="_blank">VSCO |</a>
             <a href="mailto:contact@picturesandwords.com">Email</a>
         </div>
         <p>&copy; 2025 Pictures & Words. All rights reserved.</p>

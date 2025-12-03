@@ -18,26 +18,38 @@
 <body>
     <header>
         <h1>Pictures & Words</h1>
-        <button class="hamburger" onclick="toggleMenu()">☰</button>
-        <nav>
+        <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+                <nav>
             <ul id="navLinks" class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li class="dropdown">
-                    <a href="pictures.html" class="dropbtn active">Pictures ▾</a>
+                    <a href="pictures.html" class="dropbtn">Pictures &#9662;</a>
                     <ul class="dropdown-content">
+                        <li><a href="pictures.html">All Galleries</a></li>
                         <li><a href="textures.html">Textures</a></li>
                         <li><a href="motion.html">Motion</a></li>
                         <li><a href="negative-space.html">Negative Space</a></li>
-                        <li><a href="composition.html">Composition</a></li>
+                        <li><a href="composition.html" class="active">Composition</a></li>
                         <li><a href="bugs.html">Bugs</a></li>
                         <li><a href="bug-videos.html">Bug Videos</a></li>
                         <li><a href="flowers.html">Flowers</a></li>
                     </ul>
                 </li>
-                <li><a href="words.html">Words</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="citations.html">Citations</a></li>
+                <li class="dropdown">
+                    <a href="words.html" class="dropbtn">Words &#9662;</a>
+                    <ul class="dropdown-content">
+                        <li><a href="recent-reads.html">Recent Reads</a></li>
+                        <li><a href="words.html">My Top Nine</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="about.html" class="dropbtn">More &#9662;</a>
+                    <ul class="dropdown-content">
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="citations.html">Citations</a></li>
+                    </ul>
+                </li>
             </ul>
         </nav>
     </header>
@@ -50,64 +62,53 @@
     <main>
         <div class="container">
             <h1 class="text-center">Composition</h1>
-            <p class="text-center"><a href="pictures.html">← Back to All Galleries</a></p>
+            <p class="text-center"><a href="pictures.html">&#8592; Back to All Galleries</a></p>
 
-            <section class="image-grid">
-                <figure>
-                    <img src="assets/images/Composition/IMG_3371.jpg" alt="A cascade of waterfalls shot from above">
-                    <figcaption>Cascade</figcaption>
+            <div class="row">
+  <div class="column">
+    <figure>
+                    <img src="assets/images/Composition/richie in creek.jpg" alt="a boy looking at a little creek">
                 </figure>
-
-                <figure>
+    <figure>
+                    <img src="assets/images/Composition/Placid.jpg" alt="a view of Lake Placid NY from a balcony">
+                </figure>
+    <figure>
                     <img src="assets/images/Composition/IMG_9128.jpg"
                         alt="two ducks before a lake with fall foliage hills in the background">
-                    <figcaption>Mirror Lake</figcaption>
                 </figure>
-
-                <figure>
+  </div>
+  <div class="column">
+    <figure>
                     <img src="assets/images/Composition/IMG_9791.jpg"
                         alt="Winter scene of mountains meeting at a long lake with a hiker (John) sillouhetted by the water.">
-                    <figcaption>Indian Head</figcaption>
                 </figure>
-
-                <figure>
-                    <img src="assets/images/Composition/Placid.jpg" alt="a view of Lake Placid NY from a balcony">
-                    <figcaption>Lake Placid</figcaption>
-                </figure>
-
-                <figure>
-                    <img src="assets/images/Composition/blanc.jpg"
-                        alt="View from a gondola on Mont Blanc, grassy rocky hills descending to a town in the distance.">
-                    <figcaption>Mont Blanc</figcaption>
-                </figure>
-
-                <figure>
+    <figure>
                     <img src="assets/images/Composition/church.jpg"
                         alt="A white church with the base of a statue in the foreground.">
-                    <figcaption>Church</figcaption>
                 </figure>
-
-                <figure>
+  </div>
+  <div class="column">
+    <figure>
+                    <img src="assets/images/Composition/blanc.jpg"
+                        alt="View from a gondola on Mont Blanc, grassy rocky hills descending to a town in the distance.">
+                </figure>
+    <figure>
                     <img src="assets/images/Composition/maxhike.jpg"
                         alt="A hiker walking through a wintery pine forest">
-                    <figcaption>Winter Wood</figcaption>
                 </figure>
-            </section>
+  </div>
+</div>
         </div>
     </main>
 
     <footer>
-        <nav>
-            <ul>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="citations.html">Citations</a></li>
-            </ul>
-        </nav>
         <div class="footer-social">
-            <a href="https://www.goodreads.com/user/show/109060411-john-gallagher" target="_blank">Goodreads</a> |
-            <a href="https://www.instagram.com/jhngllghr/" target="_blank">Instagram</a> |
-            <a href="https://vsco.co/juunggle/gallery" target="_blank">VSCO</a> |
+            <a href="about.html">About |</a>
+            <a href="contact.html">Contact |</a>
+            <a href="citations.html">Citations |</a>
+            <a href="https://www.goodreads.com/user/show/109060411-john-gallagher" target="_blank">Goodreads |</a>
+            <a href="https://www.instagram.com/jhngllghr/" target="_blank">Instagram |</a>
+            <a href="https://vsco.co/juunggle/gallery" target="_blank">VSCO |</a>
             <a href="mailto:contact@picturesandwords.com">Email</a>
         </div>
         <p>&copy; 2025 Pictures & Words. All rights reserved.</p>
