@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Motion Gallery</title>
-    <meta name="description"
-        content="A photography gallery capturing motion through various shutter speeds and techniques.">
+    <meta name="description" content="Photography gallery capturing movement and energy in still images.">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,27 +18,32 @@
     <header>
         <h1>Pictures & Words</h1>
         <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
-                <nav>
+        <nav>
             <ul id="navLinks" class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li class="dropdown">
-                    <a href="pictures.html" class="dropbtn">Pictures &#9662;</a>
+                    <a href="index.html" class="dropbtn">Pictures &#9662;</a>
                     <ul class="dropdown-content">
-                        <li><a href="pictures.html">All Galleries</a></li>
                         <li><a href="textures.html">Textures</a></li>
                         <li><a href="motion.html" class="active">Motion</a></li>
                         <li><a href="negative-space.html">Negative Space</a></li>
                         <li><a href="composition.html">Composition</a></li>
                         <li><a href="bugs.html">Bugs</a></li>
-                        <li><a href="bug-videos.html">Bug Videos</a></li>
                         <li><a href="flowers.html">Flowers</a></li>
                     </ul>
                 </li>
                 <li class="dropdown">
-                    <a href="words.html" class="dropbtn">Words &#9662;</a>
+                    <a href="index.html" class="dropbtn">Words &#9662;</a>
                     <ul class="dropdown-content">
-                        <li><a href="recent-reads.html">Recent Reads</a></li>
-                        <li><a href="words.html">My Top Nine</a></li>
+                        <li><a href="books/brothers-karamazov.html">The Brothers Karamazov</a></li>
+                        <li><a href="books/east-of-eden.html">East of Eden</a></li>
+                        <li><a href="books/frankenstein.html">Frankenstein</a></li>
+                        <li><a href="books/mere-christianity.html">Mere Christianity</a></li>
+                        <li><a href="books/count-of-monte-cristo.html">The Count of Monte Cristo</a></li>
+                        <li><a href="books/chronicles-of-narnia.html">The Chronicles of Narnia</a></li>
+                        <li><a href="books/the-waves.html">The Waves</a></li>
+                        <li><a href="books/death-of-ivan-ilych.html">The Death of Ivan Ilych</a></li>
+                        <li><a href="books/zorba-the-greek.html">Zorba the Greek</a></li>
                     </ul>
                 </li>
                 <li class="dropdown">
@@ -55,48 +59,50 @@
     </header>
 
     <main>
-        <div class="container">
-            <h1 class="text-center">Motion</h1>
-            <p class="text-center"><a href="pictures.html">&#8592; Back to All Galleries</a></p>
-
-            <div class="row">
-  <div class="column">
-    <figure>
-                    <img src="assets/images/Motion/000061630025.jpg"
-                        alt="A motion blurred person falling into the water from a cliff">
+        <div class="page-navigation">
+            <a href="textures.html">&#8592; Textures</a>
+            <a href="negative-space.html">Negative Space &#8594;</a>
+        </div>
+        <div class="row">
+            <div class="column">
+                <figure>
+                    <img src="assets/images/Motion/Bike.jpg" alt="Motion blur of a bike">
                 </figure>
-    <figure>
-                    <img src="assets/images/Motion/IMG_2335.jpg" alt="A motion blurred person spinning in the air">
+                <figure>
+                    <img src="assets/images/Motion/marco!.jpg" alt="Marco motion">
                 </figure>
-  </div>
-  <div class="column">
-    <figure>
-                    <img src="assets/images/Motion/IMG_0204.jpg" alt="Two girls bouncing in the air">
+            </div>
+            <div class="column">
+                <figure>
+                    <img src="assets/images/Motion/000061630025.jpg" alt="Motion shot">
                 </figure>
-    <figure>
-                    <img src="assets/images/Motion/marco!.jpg" alt="A person jumping from a high cliff into the water">
+                <figure>
+                    <img src="assets/images/Motion/IMG_0204.jpg" alt="Motion shot">
                 </figure>
-  </div>
-  <div class="column">
-    <figure>
-                    <img src="assets/images/Motion/Bike.jpg" alt="Two sisters riding bikes in motion">
+            </div>
+            <div class="column">
+                <figure>
+                    <img src="assets/images/Motion/IMG_2335.jpg" alt="Motion shot">
                 </figure>
-  </div>
-</div>
+            </div>
         </div>
     </main>
 
     <footer>
-        <div class="footer-social">
+        <div>
             <a href="about.html">About |</a>
             <a href="contact.html">Contact |</a>
             <a href="citations.html">Citations |</a>
+        </div>
+        <div>
             <a href="https://www.goodreads.com/user/show/109060411-john-gallagher" target="_blank">Goodreads |</a>
             <a href="https://www.instagram.com/jhngllghr/" target="_blank">Instagram |</a>
             <a href="https://vsco.co/juunggle/gallery" target="_blank">VSCO |</a>
             <a href="mailto:contact@picturesandwords.com">Email</a>
         </div>
-        <p>&copy; 2025 Pictures & Words. All rights reserved.</p>
+        <div>
+            <p>&copy; 2025 Pictures & Words. All rights reserved.</p>
+        </div>
     </footer>
 
     <script src="script.js"></script>

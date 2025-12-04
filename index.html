@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="home-body">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pictures & Words - Home</title>
-    <meta name="description"
-        content="Welcome to Pictures & Words - a photography and writing portfolio showcasing visual artistry and literary reflections.">
+    <title>Pictures & Words</title>
+    <meta name="description" content="A creative portfolio showcasing photography and book reviews.">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,31 +14,36 @@
         rel="stylesheet">
 </head>
 
-<body>
+<body class="home-body">
     <header>
         <h1>Pictures & Words</h1>
         <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
-                <nav>
+        <nav>
             <ul id="navLinks" class="nav-links">
                 <li><a href="index.html" class="active">Home</a></li>
                 <li class="dropdown">
-                    <a href="pictures.html" class="dropbtn">Pictures &#9662;</a>
+                    <a href="index.html" class="dropbtn">Pictures &#9662;</a>
                     <ul class="dropdown-content">
-                        <li><a href="pictures.html">All Galleries</a></li>
                         <li><a href="textures.html">Textures</a></li>
                         <li><a href="motion.html">Motion</a></li>
                         <li><a href="negative-space.html">Negative Space</a></li>
                         <li><a href="composition.html">Composition</a></li>
                         <li><a href="bugs.html">Bugs</a></li>
-                        <li><a href="bug-videos.html">Bug Videos</a></li>
                         <li><a href="flowers.html">Flowers</a></li>
                     </ul>
                 </li>
                 <li class="dropdown">
-                    <a href="words.html" class="dropbtn">Words &#9662;</a>
+                    <a href="index.html" class="dropbtn">Words &#9662;</a>
                     <ul class="dropdown-content">
-                        <li><a href="recent-reads.html">Recent Reads</a></li>
-                        <li><a href="words.html">My Top Nine</a></li>
+                        <li><a href="books/brothers-karamazov.html">The Brothers Karamazov</a></li>
+                        <li><a href="books/east-of-eden.html">East of Eden</a></li>
+                        <li><a href="books/frankenstein.html">Frankenstein</a></li>
+                        <li><a href="books/mere-christianity.html">Mere Christianity</a></li>
+                        <li><a href="books/count-of-monte-cristo.html">The Count of Monte Cristo</a></li>
+                        <li><a href="books/chronicles-of-narnia.html">The Chronicles of Narnia</a></li>
+                        <li><a href="books/the-waves.html">The Waves</a></li>
+                        <li><a href="books/death-of-ivan-ilych.html">The Death of Ivan Ilych</a></li>
+                        <li><a href="books/zorba-the-greek.html">Zorba the Greek</a></li>
                     </ul>
                 </li>
                 <li class="dropdown">
@@ -55,46 +59,104 @@
     </header>
 
     <main>
-        <div>
-            <h1>Pictures & Words</h1>
-            <p>Welcome to Pictures & Words A website hosting photos and quotes I've collected. on the words side of the
-                site, you can see my recent reads, and a page listing my current favorite 9 books. on the pictures side
-                you can browse galleries of my photos divided by the stylistic focus of the picturesr. you can also
-                generate a random photo or quote using the below boxes. Visit the about page to learn more, and connect
-                with me on the social links in the footer of each page. Thankyou for visiting!</p>
-        </div>
         <div class="split-container">
-            <section class="split-section">
-                <h2>Pictures</h2>
-                <div class="shuffle-box" onclick="shuffleImage()">
-                    <p class="caption">Click to Shuffle Image</p>
-                    <img id="shuffleImageDisplay" src="" alt="" style="display: none;">
+            <div class="split-pane left-pane" id="pictures-pane" onclick="expandPane('pictures')">
+                <div class="pane-cover">
+                    <h2>Pictures</h2>
                 </div>
-                <p><a href="pictures.html">View All Galleries &#8594;</a></p>
-            </section>
+                <div class="pane-content">
+                    <h2>Pictures</h2>
+                    <div class="gallery-grid">
+                        <a href="textures.html" class="grid-item">
+                            <img src="assets/images/textures/treebark3.jpg" alt="Textures">
+                            <div class="overlay-title">Textures</div>
+                        </a>
+                        <a href="motion.html" class="grid-item">
+                            <img src="assets/images/Motion/Bike.jpg" alt="Motion">
+                            <div class="overlay-title">Motion</div>
+                        </a>
+                        <a href="negative-space.html" class="grid-item">
+                            <img src="assets/images/Negative Space/IMG_0868.jpg" alt="Negative Space">
+                            <div class="overlay-title">Negative Space</div>
+                        </a>
+                        <a href="composition.html" class="grid-item">
+                            <img src="assets/images/Composition/richie in creek.jpg" alt="Composition">
+                            <div class="overlay-title">Composition</div>
+                        </a>
+                        <a href="bugs.html" class="grid-item">
+                            <img src="assets/images/bugs/cricket.jpg" alt="Bugs">
+                            <div class="overlay-title">Bugs</div>
+                        </a>
+                        <a href="flowers.html" class="grid-item">
+                            <img src="assets/images/flower/flower.jpg" alt="Flowers">
+                            <div class="overlay-title">Flowers</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="pane-label">
+                    <span>Click to go to Pictures</span>
+                </div>
+            </div>
 
-            <section class="split-section">
-                <h2>Words</h2>
-                <div class="shuffle-box" onclick="shuffleQuote()">
-                    <p class="caption">Click to Shuffle Quote</p>
-                    <p id="shuffleQuoteDisplay">Click above to see a random quote</p>
+            <div class="split-pane right-pane" id="words-pane" onclick="expandPane('words')">
+                <div class="pane-cover">
+                    <h2>Words</h2>
                 </div>
-                <p><a href="words.html">Read Book Reviews &#8594;</a></p>
-            </section>
+                <div class="pane-content">
+                    <h2>Words</h2>
+                    <div class="words-grid">
+                        <a href="books/brothers-karamazov.html" class="grid-item">
+                            <img src="assets/images/BookCovers/Brothers K.jpg" alt="The Brothers Karamazov">
+                        </a>
+                        <a href="books/east-of-eden.html" class="grid-item">
+                            <img src="assets/images/BookCovers/East of Eden.jpg" alt="East of Eden">
+                        </a>
+                        <a href="books/frankenstein.html" class="grid-item">
+                            <img src="assets/images/BookCovers/Frankenstein.jpg" alt="Frankenstein">
+                        </a>
+                        <a href="books/mere-christianity.html" class="grid-item">
+                            <img src="assets/images/BookCovers/Mere Christianity.jpg" alt="Mere Christianity">
+                        </a>
+                        <a href="books/count-of-monte-cristo.html" class="grid-item">
+                            <img src="assets/images/BookCovers/Monte.jpg" alt="The Count of Monte Cristo">
+                        </a>
+                        <a href="books/chronicles-of-narnia.html" class="grid-item">
+                            <img src="assets/images/BookCovers/Narnia.jpg" alt="The Chronicles of Narnia">
+                        </a>
+                        <a href="books/the-waves.html" class="grid-item">
+                            <img src="assets/images/BookCovers/The Waves.jpg" alt="The Waves">
+                        </a>
+                        <a href="books/death-of-ivan-ilych.html" class="grid-item">
+                            <img src="assets/images/BookCovers/The death of Ivan.jpg" alt="The Death of Ivan Ilych">
+                        </a>
+                        <a href="books/zorba-the-greek.html" class="grid-item">
+                            <img src="assets/images/BookCovers/Zorba.jpg" alt="Zorba the Greek">
+                        </a>
+                    </div>
+                </div>
+                <div class="pane-label">
+                    <span>Click to go to Words</span>
+                </div>
+            </div>
+            <div class="center-ampersand">&</div>
         </div>
     </main>
 
     <footer>
-        <div class="footer-social">
+        <div>
             <a href="about.html">About |</a>
             <a href="contact.html">Contact |</a>
             <a href="citations.html">Citations |</a>
+        </div>
+        <div>
             <a href="https://www.goodreads.com/user/show/109060411-john-gallagher" target="_blank">Goodreads |</a>
             <a href="https://www.instagram.com/jhngllghr/" target="_blank">Instagram |</a>
             <a href="https://vsco.co/juunggle/gallery" target="_blank">VSCO |</a>
             <a href="mailto:contact@picturesandwords.com">Email</a>
         </div>
-        <p>&copy; 2025 Pictures & Words. All rights reserved.</p>
+        <div>
+            <p>&copy; 2025 Pictures & Words. All rights reserved.</p>
+        </div>
     </footer>
 
     <script src="script.js"></script>

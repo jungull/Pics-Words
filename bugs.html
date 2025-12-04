@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bugs Gallery</title>
-    <meta name="description"
-        content="Macro photography gallery featuring insects and small creatures in their natural habitats.">
+    <meta name="description" content="Macro photography gallery featuring insects and spiders.">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,27 +18,32 @@
     <header>
         <h1>Pictures & Words</h1>
         <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
-                <nav>
+        <nav>
             <ul id="navLinks" class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li class="dropdown">
-                    <a href="pictures.html" class="dropbtn">Pictures &#9662;</a>
+                    <a href="index.html" class="dropbtn">Pictures &#9662;</a>
                     <ul class="dropdown-content">
-                        <li><a href="pictures.html">All Galleries</a></li>
                         <li><a href="textures.html">Textures</a></li>
                         <li><a href="motion.html">Motion</a></li>
                         <li><a href="negative-space.html">Negative Space</a></li>
                         <li><a href="composition.html">Composition</a></li>
                         <li><a href="bugs.html" class="active">Bugs</a></li>
-                        <li><a href="bug-videos.html">Bug Videos</a></li>
                         <li><a href="flowers.html">Flowers</a></li>
                     </ul>
                 </li>
                 <li class="dropdown">
-                    <a href="words.html" class="dropbtn">Words &#9662;</a>
+                    <a href="index.html" class="dropbtn">Words &#9662;</a>
                     <ul class="dropdown-content">
-                        <li><a href="recent-reads.html">Recent Reads</a></li>
-                        <li><a href="words.html">My Top Nine</a></li>
+                        <li><a href="books/brothers-karamazov.html">The Brothers Karamazov</a></li>
+                        <li><a href="books/east-of-eden.html">East of Eden</a></li>
+                        <li><a href="books/frankenstein.html">Frankenstein</a></li>
+                        <li><a href="books/mere-christianity.html">Mere Christianity</a></li>
+                        <li><a href="books/count-of-monte-cristo.html">The Count of Monte Cristo</a></li>
+                        <li><a href="books/chronicles-of-narnia.html">The Chronicles of Narnia</a></li>
+                        <li><a href="books/the-waves.html">The Waves</a></li>
+                        <li><a href="books/death-of-ivan-ilych.html">The Death of Ivan Ilych</a></li>
+                        <li><a href="books/zorba-the-greek.html">Zorba the Greek</a></li>
                     </ul>
                 </li>
                 <li class="dropdown">
@@ -54,80 +58,90 @@
         </nav>
     </header>
 
-    <!-- sidebar navigation to words -->
-    <div class="sidebar sidebar-right">
-        <a href="index.html">Words</a>
-    </div>
-
     <main>
-        <div class="container">
-            <h1 class="text-center">Bugs</h1>
-            <p class="text-center"><a href="pictures.html">&#8592; Back to All Galleries</a></p>
-
-            <div class="row">
-  <div class="column">
-    <figure>
-                    <img src="assets/images/bugs/cricket.jpg"
-                        alt="Cricket perched on a leaf showing detailed body structure">
+        <div class="page-navigation">
+            <a href="composition.html">&#8592; Composition</a>
+            <a href="flowers.html">Flowers &#8594;</a>
+        </div>
+        <div class="row">
+            <div class="column">
+                <figure>
+                    <img src="assets/images/bugs/cricket.jpg" alt="Cricket">
                 </figure>
-    <figure>
-                    <img src="assets/images/bugs/stickbug.jpg" alt="Stick insect camouflaged on branch">
+                <figure>
+                    <img src="assets/images/bugs/dragon.jpg" alt="Dragonfly">
                 </figure>
-    <figure>
-                    <img src="assets/images/bugs/t-hawk.jpg" alt="Tarantula Hawk in the grass">
+                <figure>
+                    <img src="assets/images/bugs/moth.jpg" alt="Moth">
                 </figure>
-    <figure>
-                    <img src="assets/images/bugs/toad.jpg" alt="Toad with textured skin in natural habitat">
+                <figure>
+                    <img src="assets/images/bugs/spider.JPG" alt="Spider">
                 </figure>
-    <figure>
-                    <img src="assets/images/bugs/wasps.jpg" alt="Wasps building paper nest">
+                <figure>
+                    <video controls width="100%" preload="metadata">
+                        <source src="assets/video/bug%20videos/IMG_9117.MOV" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
                 </figure>
-  </div>
-  <div class="column">
-    <figure>
-                    <img src="assets/images/bugs/yellow jacket.jpg"
-                        alt="Yellow jacket wasp showing distinctive yellow and black stripes">
+            </div>
+            <div class="column">
+                <figure>
+                    <img src="assets/images/bugs/stickbug.jpg" alt="Stickbug">
                 </figure>
-    <figure>
-                    <img src="assets/images/bugs/cutespider.JPG" alt="Small jumping spider with large eyes">
+                <figure>
+                    <img src="assets/images/bugs/toad.jpg" alt="Toad">
                 </figure>
-    <figure>
-                    <img src="assets/images/bugs/dragon.jpg" alt="A dragonfly">
+                <figure>
+                    <img src="assets/images/bugs/wasps.jpg" alt="Wasps">
                 </figure>
-    <figure>
-                    <img src="assets/images/bugs/frightful.jpg"
-                        alt="An unknown insect nxt to a mini snickers bar with the word frightful printed on it">
+                <figure>
+                    <img src="assets/images/bugs/yellow jacket.jpg" alt="Yellow Jacket">
                 </figure>
-  </div>
-  <div class="column">
-    <figure>
-                    <img src="assets/images/bugs/gulag spider.jpg" alt="A spider on a book">
+                <figure>
+                    <video controls width="100%" preload="metadata">
+                        <source src="assets/video/bug%20videos/IMG_9125.MOV" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
                 </figure>
-    <figure>
-                    <img src="assets/images/bugs/locus.jpg" alt="A Locust">
+            </div>
+            <div class="column">
+                <figure>
+                    <img src="assets/images/bugs/cutespider.JPG" alt="Cute Spider">
                 </figure>
-    <figure>
-                    <img src="assets/images/bugs/moth.jpg" alt="A Moth">
+                <figure>
+                    <img src="assets/images/bugs/frightful.jpg" alt="Frightful Spider">
                 </figure>
-    <figure>
-                    <img src="assets/images/bugs/spider.JPG" alt="a spider">
+                <figure>
+                    <img src="assets/images/bugs/gulag spider.jpg" alt="Spider">
                 </figure>
-  </div>
-</div>
+                <figure>
+                    <img src="assets/images/bugs/locus.jpg" alt="Locust">
+                </figure>
+                <figure>
+                    <video controls width="100%" preload="metadata">
+                        <source src="assets/video/bug%20videos/IMG_9133.MOV" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </figure>
+            </div>
         </div>
     </main>
 
     <footer>
-        <div class="footer-social">
+        <div>
             <a href="about.html">About |</a>
             <a href="contact.html">Contact |</a>
             <a href="citations.html">Citations |</a>
+        </div>
+        <div>
             <a href="https://www.goodreads.com/user/show/109060411-john-gallagher" target="_blank">Goodreads |</a>
             <a href="https://www.instagram.com/jhngllghr/" target="_blank">Instagram |</a>
             <a href="https://vsco.co/juunggle/gallery" target="_blank">VSCO |</a>
             <a href="mailto:contact@picturesandwords.com">Email</a>
         </div>
-        <p>&copy; 2025 Pictures & Words. All rights reserved.</p>
+        <div>
+            <p>&copy; 2025 Pictures & Words. All rights reserved.</p>
+        </div>
     </footer>
 
     <script src="script.js"></script>

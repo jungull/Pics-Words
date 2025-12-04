@@ -1,0 +1,87 @@
+================================================================================
+HOMEPAGE GRID LAYOUT UPDATE
+Pictures & Words Project
+Completed: December 4, 2025
+================================================================================
+
+OBJECTIVE:
+Make the homepage split-pane grids fit within the viewport without scrolling
+while maintaining responsive design at various breakpoints.
+
+CHANGES MADE:
+================================================================================
+
+1. GALLERY GRID (Pictures Pane)
+   - Layout: 3 columns × 2 rows (6 items total)
+   - Changed from: Fixed 30% columns
+   - Changed to: repeat(3, 1fr) with 1% gap and padding
+   - Benefits: Responsive sizing, proper spacing, no overflow
+
+2. WORDS GRID (Words Pane)
+   - Layout: 5 items in row 1, 4 items in row 2 (9 items total)
+   - Changed from: Fixed 15% columns × 5
+   - Changed to: repeat(5, 1fr) with 1% gap and padding
+   - Special feature: Items 6-9 positioned in columns 1-4 of row 2 (centered)
+   - Benefits: Asymmetric grid with centered second row
+
+3. RESPONSIVE BEHAVIOR
+   Desktop (> 768px):
+   - Gallery grid: 3×2 layout with proper gaps
+   - Words grid: 5+4 layout with centered second row
+   
+   Mobile (≤ 768px):
+   - Both grids: Stack vertically (display: block)
+   - Grid items: Full width with 2em bottom margin
+   - Grid positioning: Reset (grid-column: auto)
+
+CSS CHANGES:
+================================================================================
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  /* 3 equal columns */
+    grid-template-rows: repeat(2, 1fr);     /* 2 equal rows */
+    gap: 1%;                                 /* Spacing between items */
+    padding: 1%;                             /* Container padding */
+    height: 100%;
+    width: 100%;
+    flex: 1 1 auto;
+}
+
+.words-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);  /* 5 equal columns */
+    grid-template-rows: repeat(2, 1fr);     /* 2 equal rows */
+    gap: 1%;
+    padding: 1%;
+    height: 100%;
+    width: 100%;
+    flex: 1 1 auto;
+}
+
+/* Position items 6-9 in columns 1-4 of row 2 */
+.words-grid .grid-item:nth-child(6) { grid-column: 1 / 2; }
+.words-grid .grid-item:nth-child(7) { grid-column: 2 / 3; }
+.words-grid .grid-item:nth-child(8) { grid-column: 3 / 4; }
+.words-grid .grid-item:nth-child(9) { grid-column: 4 / 5; }
+
+EXPECTED RESULTS:
+================================================================================
+✓ No scrolling required on homepage (desktop)
+✓ Grids fit within viewport height
+✓ Proper spacing between grid items (1% gap)
+✓ Responsive layout for mobile devices
+✓ Centered second row in words grid (4 items vs 5)
+✓ Maintains aspect ratios and hover effects
+
+TESTING CHECKLIST:
+================================================================================
+□ Desktop (1920×1080): Both panes expand without scrolling
+□ Laptop (1366×768): Grids fit within viewport
+□ Tablet (768px): Grids stack vertically
+□ Mobile (480px): Full-width stacked layout
+□ Hover effects still work on grid items
+□ Images maintain aspect ratio
+□ Overlay titles display correctly
+
+================================================================================
