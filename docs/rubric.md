@@ -15,7 +15,7 @@
 ## 3. HTML & SEO Elements
 - [x] **Meta Data:** Include a descriptive `<title>` tag and `<meta>` description for **every** HTML page .
 - [x] **Tagging:** Use appropriate tags, ensuring they are nested and ended correctly with correct attributes .
-- [ ] **Table:** Include one table with at least three rows and three columns containing unique content .
+- [x] **Table:** Include one table with at least three rows and three columns containing unique content .
 
 ## 4. Content & Writing
 - [x] **Volume:** Include at least **250+ words** of content on at least **four** different pages .
@@ -38,9 +38,9 @@
 - [x] **Layout Consistency:** Layout must be very useful, well-organized, and consistently applied across pages .
 - [x] **Formatting:** Use whitespace and alignment effectively to organize content .
 - [x] **Responsiveness:** Correct use of responsive design for both mobile and desktop views .
-- [ ] **CSS Techniques:**
+- [x] **CSS Techniques:**
     - [x] **Background:** Use a non-white background on at least one page .
-    - [ ] **Float:** Use a multi-column layout utilizing the `float` property on at least **two** pages .
+    - [x] **Float:** Use a multi-column layout utilizing the `float` property on at least **two** pages .
     - [x] **Grid:** Use the CSS Grid element to display content .
     - [x] **Alignment:** Use appropriate and varied alignments (Left, right, center, Top, bottom, justified) .
     - [x] **Box Model:** Appropriate use of Borders, Padding, and Margins .

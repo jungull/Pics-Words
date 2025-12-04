@@ -8,6 +8,7 @@ body {
     height: 100%;
     margin: 0;
     padding: 0;
+    overflow: auto;
 }
 
 img,
@@ -100,13 +101,16 @@ header {
     background: rgb(29, 48, 48);
     padding: 1em 2em;
     flex: 0 0 auto;
-    position: sticky;
-    top: 0;
     z-index: 1000;
     display: flex;
     justify-content: space-between;
     align-items: center;
     box-shadow: 0 2px 5px black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 header h1 {
@@ -329,6 +333,7 @@ th {
     width: 100%;
     background: rgba(0, 0, 0, 0.85);
     flex: 1 1 auto;
+    overflow: auto;
     display: flex;
     flex-direction: column;
 }
@@ -614,6 +619,11 @@ footer {
     color: white;
     padding-top: 0;
     text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 footer div {
