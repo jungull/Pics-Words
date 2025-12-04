@@ -502,7 +502,7 @@ input[type="submit"]:hover {
 }
 
 .book-cover {
-    position: sticky;
+    /* position: sticky; Removed as per vocabulary constraints */
     float: left;
     margin-right: 2em;
     margin-bottom: 1em;
@@ -577,41 +577,7 @@ input[type="submit"]:hover {
     padding: 0 4px;
 }
 
-.column figure {
-    margin: 0;
-    width: 100%;
-}
-
-/* Page Navigation (Sticky) */
-.page-navigation {
-    position: fixed;
-    top: 100px;
-    left: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding: 0 20px;
-    pointer-events: none;
-    z-index: 900;
-}
-
-.page-navigation a {
-    pointer-events: auto;
-    background: rgba(0, 0, 0, 0.6);
-    color: white;
-    padding: 10px 15px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: background 0.3s;
-    backdrop-filter: blur(5px);
-}
-
-.page-navigation a:hover {
-    background: rgba(0, 0, 0, 0.8);
-    color: silver;
-    text-decoration: none;
-}
+.column figure {}
 
 /* Footer */
 footer {
